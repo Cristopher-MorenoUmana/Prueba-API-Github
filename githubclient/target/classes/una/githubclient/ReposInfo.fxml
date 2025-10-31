@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="545.0" styleClass="mainFxmlClass" stylesheets="@../../css/Style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/24.0.1" fx:controller="controller.ReposInfoController">
+   <children>
+      <TextField fx:id="nameTextF" editable="false" layoutX="47.0" layoutY="94.0" prefHeight="32.0" prefWidth="234.0" text="Nombre:" />
+      <TextArea fx:id="descriptionTextF" editable="false" layoutX="293.0" layoutY="95.0" prefHeight="160.0" prefWidth="200.0" text="Descripcion:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="languageTextF" editable="false" layoutX="47.0" layoutY="138.0" prefHeight="32.0" prefWidth="234.0" text="Lenguage Principal:" />
+      <Button fx:id="nextRepoBtn" layoutX="428.0" layoutY="560.0" mnemonicParsing="false" text="Siguiente" />
+      <Button fx:id="previousRepoBtn" layoutX="59.0" layoutY="560.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" text="Anterior" />
+      <TextField fx:id="stargazersTextF" editable="false" layoutX="47.0" layoutY="179.0" prefHeight="32.0" prefWidth="234.0" text="Estrellas:" />
+      <TextField fx:id="forksTextF" editable="false" layoutX="47.0" layoutY="222.0" prefHeight="32.0" prefWidth="233.0" text="Forks:" />
+      <TextField fx:id="lastUpdateTextF" editable="false" layoutX="47.0" layoutY="266.0" prefHeight="32.0" prefWidth="445.0" text="Ultima actualización:" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="32.0" prefWidth="76.0" text="Volver" />
+      <BarChart fx:id="languajesBarChart" layoutX="47.0" layoutY="328.0" prefHeight="230.0" prefWidth="457.0">
+        <xAxis>
+          <CategoryAxis fx:id="CategoryAxis" prefHeight="39.0" prefWidth="390.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Text layoutX="206.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grafico de lenguajes:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentIndexText" layoutX="233.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="267.0" layoutY="582.0" strokeType="OUTSIDE" strokeWidth="0.0" text="de">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="finalIndexText" layoutX="310.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../../css/Style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileInfoController">
+   <children>
+      <VBox alignment="CENTER" layoutX="34.0" layoutY="62.0" prefHeight="104.0" prefWidth="102.0">
+         <children>
+            <ImageView fx:id="profileImageView" fitHeight="97.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <TextField fx:id="nameTextF" editable="false" layoutX="169.0" layoutY="98.0" prefHeight="32.0" prefWidth="397.0" text="Nombre:" />
+      <TextField fx:id="followersTextF" editable="false" layoutX="169.0" layoutY="62.0" text="Seguidores:" />
+      <TextArea fx:id="bioTextArea" editable="false" layoutX="34.0" layoutY="185.0" prefHeight="115.0" prefWidth="253.0" text="Bio:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="followingsTextF" editable="false" layoutX="169.0" layoutY="134.0" text="Seguidos:" />
+      <TextField fx:id="locationTextF" editable="false" layoutX="342.0" layoutY="62.0" prefHeight="32.0" prefWidth="223.0" text="Ubicacion:" />
+      <TextField fx:id="creationDateTextF" editable="false" layoutX="342.0" layoutY="134.0" prefHeight="32.0" prefWidth="223.0" text="Fecha de creación:" />
+      <TextArea fx:id="blogTextArea" editable="false" layoutX="311.0" layoutY="185.0" prefHeight="115.0" prefWidth="254.0" text="Blog:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backPressed" prefHeight="32.0" prefWidth="78.0" text="Volver" />
+   </children>
+</AnchorPane>

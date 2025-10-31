@@ -1,0 +1,111 @@
+Button {
+    -fx-background-color: #CCFFFF;
+    -fx-text-fill: black;        
+    -fx-border-color: black;    
+    -fx-background-radius: 7;  
+    -fx-border-radius: 3; 
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-border-width: 3;
+}
+
+ButtonBar {
+    
+    -fx-background-color: #7BAFD4;
+    -fx-text-fill: black;        
+    -fx-border-color: black;    
+    -fx-background-radius: 7;  
+    -fx-border-radius: 3;
+    -fx-border-width: 3;
+}
+
+Text{
+    -fx-font-weight: bold;
+}
+
+AnchorPane{
+    -fx-background-color: #7BAFD4;
+    -fx-border-color: black;
+    -fx-border-width: 8;
+}
+
+RadioButton{
+    -fx-text-fill: white; 
+}
+
+VBox{
+    -fx-background-color: #7A99AC;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+}
+
+TableView{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width:1;
+    -fx-text-fill: black;
+}
+TextField{
+    -fx-border-color: black;
+    -fx-border-width:1;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+DatePicker{
+    -fx-border-color: black;
+    -fx-border-width:1;
+}
+Accordion{
+    -fx-background-color: #00FFCC;
+}
+.titled-pane VBox {
+    -fx-background-color: lightblue;
+    -fx-padding: 10;
+}
+.titled-pane Button {
+    -fx-background-color: #CCFFFF;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-background-radius: 5;
+    -fx-border-radius: 3;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+}
+TableView {
+    -fx-background-color: #CCFFFF;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+
+.table-cell {
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+}
+Line{
+    -fx-stroke-width:3;
+}
+ListView{
+
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+
+TextArea {
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
+
+TextField {
+    -fx-border-color: black;
+    -fx-border-width: 3px;
+}
